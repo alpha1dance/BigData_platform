@@ -4,4 +4,7 @@ import App from './App.vue'
 import {router} from "@/router";
 import {createPinia} from "pinia";
 
-createApp(App).use(createPinia()).use(router).mount('#app')
+import ViewUIPlus from 'view-ui-plus'
+import 'view-ui-plus/dist/styles/viewuiplus.css'
+
+createApp(App).use(ViewUIPlus).use(createPinia()).use(router).mount('#app')
